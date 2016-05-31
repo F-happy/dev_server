@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/F-happy/dev_server#readme",
   "devDependencies": {
-    "express": "^4.13.4"
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "mockjs": "^1.0.1-beta2"
   }
 }

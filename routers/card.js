@@ -5,6 +5,6 @@
 let express = require('express');
 let router = express.Router();
 
-router.get('/test', require('../modules/test'));
+router.get('/card/list', require('../modules/card'));
 
 module.exports = router;
