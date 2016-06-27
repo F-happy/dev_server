@@ -13,7 +13,7 @@ module.exports = (req, res)=> {
         let imgArray = [];
         let has = Mock.mock({"number|0-1": 100}).number;
         for (let i = 0; i < 10; i++) {
-            imgArray.push(Mock.Random.image('200x100'))
+            imgArray.push(Mock.Random.image('640x500', '#4A7BF7'))
         }
         resArray.c = 0;
         /**
