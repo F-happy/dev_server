@@ -9,5 +9,7 @@ let router = express.Router();
 router.get('/actions/goods/recommand', require('../modules/goods'));
 router.get('/actions/market/conf', require('../modules/market'));
 router.get('/actions/market/getgift', require('../modules/getgift'));
+router.get('/actions/rebate/baseinfo', require('../modules/rebate'));
+router.get('/actions/rebate/get', require('../modules/rebate'));
 
 module.exports = router;

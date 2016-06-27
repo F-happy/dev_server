@@ -14,7 +14,7 @@ module.exports = (req, res)=> {
     let cardList = [];
     let resArray = {};
     if (!!session && !!page && !!limit) {
-        for (let i = 0; i < limit; i++) {
+        for (let i = 0; i < 2; i++) {
             let resTemp = {};
             // 充值状态码 0:等待充值，1:正在充值，2:充值成功, 3: 充值失败， 4: 不可充值,5: 重新充值( 0,1,5 充值中 2充值成功, 3,4 充值失败)
             resTemp.period = Mock.mock({"number|1-1000000": 100}).number;
