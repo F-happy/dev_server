@@ -7,13 +7,13 @@
 let Mock = require('mockjs');
 let Random = Mock.Random;
 
-module.exports = (req, res)=>{
+module.exports = (req, res)=> {
     let gids = req.query.gids;
     let resArray = {};
     let goodArray = [];
-    if (!!gids){
+    if (!!gids) {
         gids = gids.split('_');
-        gids.forEach((v, index)=>{
+        gids.forEach((v, index)=> {
             let resTemp = {};
             resTemp.gid = v;
             resTemp.sid = Mock.mock({"number|1-10000000": 100}).number;
