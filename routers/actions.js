@@ -13,5 +13,7 @@ router.get('/actions/rebate/baseinfo', require('../modules/rebate'));
 router.get('/actions/rebate/get', require('../modules/rebate'));
 router.get('/actions/novice/baseinfo', require('../modules/novice'));
 router.get('/actions/novice/getredbag', require('../modules/novice'));
+router.get('/actions/refund/coins/baseinfo', require('../modules/refund_base'));
+router.get('/actions/refund/coins/get', require('../modules/refund_get'));
 
 module.exports = router;
