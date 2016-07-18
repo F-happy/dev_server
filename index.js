@@ -16,8 +16,8 @@ app.all('*', function(req, res, next) {
     next();
 });
 
-// let routerRoot = './routers-h5/';
-let routerRoot = './routers/';
+let routerRoot = './routers-h5/';
+//let routerRoot = './routers/';
 
 fs.readdir(routerRoot, (err, files)=> {
     if (err) {
