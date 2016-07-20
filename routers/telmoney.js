@@ -6,5 +6,6 @@ let express = require('express');
 let router = express.Router();
 
 router.get('/phonebill/list', require('../modules/phonebill'));
+router.get('/esurfing/baesinfo', require('../modules/esurfing'));
 
 module.exports = router;
