@@ -31,7 +31,7 @@ module.exports = (req, res)=>{
         'total': Mock.mock({"number|1-1000": 100}).number,
         'remain': Mock.mock({"number|1-1000": 100}).number,
         'luck_code': Mock.mock({"number|1-10000000": 100}).number,
-        'user_name': Mock.mock('@csentence(20)'),
+        'user_name': Mock.mock('@csentence(10)'),
         'time': Random.datetime('yyyy-MM-dd HH:mm'),
         'user_icon': Random.image('100x100', '#894FC4')
     });

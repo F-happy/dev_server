@@ -11,7 +11,7 @@ module.exports = (req, res)=>{
     for (let i= 0;i<10;i++){
         goodList.push({
             'gid': Mock.mock({"number|1-10000000": 100}).number,
-            'sid': Mock.mock({"number|1-10000": 100}).number,
+            'sid': Mock.mock({"number|1-1000": 100}).number,
             'title': Mock.mock('@csentence(20)'),
             'description': Mock.mock('@csentence(30)'),
             'period': Mock.mock({"number|1-10000000": 100}).number,
