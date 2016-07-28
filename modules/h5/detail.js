@@ -6,9 +6,9 @@
 let api = require('superagent');
 
 module.exports = (req, resq)=>{
-    api.get('http://api.wishbao.com/caldetail/info')
+    api.get('http://api.wishbao.com/goods/detail')
     // .withCredentials()
-        .query({sid: req.query.sid})
+        .query({gid: req.query.gid})
         .set('Accept', 'application/json')
         .set('Content-Type', 'application/x-www-form-urlencoded')
         .end((err, res) => {

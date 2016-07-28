@@ -28,8 +28,20 @@ module.exports = (req, res)=> {
         resArray.c = 0;
         resArray.d = goodArray;
     } else {
-        resArray.c = 1;
-        resArray.d = {};
+        for (let i=0;i<10;i++){
+            goodArray.push({
+                'gid': Mock.mock({"number|1-1000": 100}).number,
+                'sid': Mock.mock({"number|1-10000000": 100}).number,
+                'title': Mock.mock('@csentence(20)'),
+                'description': Mock.mock('@csentence(30)'),
+                'period': Mock.mock({"number|1-10000000": 100}).number,
+                'icon': Random.image('200x200', '#4A7BF7'),
+                'total': Mock.mock({"number|1-1000": 100}).number,
+                'remain': Mock.mock({"number|1-1000": 100}).number
+            });
+        }
+        resArray.c = 0;
+        resArray.d = goodArray;
     }
     res.jsonp(resArray);
 };

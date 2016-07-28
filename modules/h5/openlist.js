@@ -14,7 +14,7 @@ module.exports = (req, res)=>{
         'icon': Random.image('200x200', '#4A7BF7'),
         'title': Mock.mock('@csentence(20)'),
         'total': Mock.mock({"number|1-1000": 100}).number,
-        'time': Mock.mock('@datetime("T")')
+        'time': Date.now()+360000
     });
 
     returnArray.push({
