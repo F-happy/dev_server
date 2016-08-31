@@ -17,5 +17,8 @@ router.get('/actions/refund/coins/baseinfo', require('../modules/refund_base'));
 router.get('/actions/refund/coins/get', require('../modules/refund_get'));
 router.get('/actions/mk/rebate/coins', require('../modules/coins'));
 router.get('/actions/mk/rebate/send', require('../modules/coins_send'));
+router.get('/actions/tianyi/img/code', require('../modules/tianyi'));
+router.get('/actions/tianyi/participate', require('../modules/tianyi'));
+router.get('/actions/pay_rebate/pageinfo', require('../modules/pageinfo'));
 
 module.exports = router;
