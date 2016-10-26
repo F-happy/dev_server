@@ -5,7 +5,11 @@
 
 const express = require('express');
 const fs = require('fs');
+const bodyParser = require('body-parser');
 let app = express();
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 app.all('*', function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
