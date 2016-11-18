@@ -6,7 +6,7 @@
 let Mock = require('mockjs');
 let Random = Mock.Random;
 
-module.exports = (req, res)=> {
+module.exports = (req, res) => {
     console.log(req.query);
     let rankList = [],
         userInfo = [];
@@ -31,8 +31,10 @@ module.exports = (req, res)=> {
     res.jsonp({
         'c': 0,
         'd': {
-            'ranklist': rankList,
-            'user_info': userInfo
+            'user_win_times': {
+                663: 11,
+                664: 0
+            }
         }
     });
 };
