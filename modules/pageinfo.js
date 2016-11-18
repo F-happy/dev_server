@@ -28,13 +28,23 @@ module.exports = (req, res) => {
         })
     }
 
-    res.jsonp({
-        'c': 0,
-        'd': {
-            'user_win_times': {
-                663: 11,
-                664: 0
+    if (req.query.rebate_id && req.query.token) {
+        res.jsonp({
+            'c': 0,
+            'd': {
+                'user_win_times': {
+                    663: 11,
+                    664: 0
+                }
             }
-        }
-    });
+        });
+    } else {
+        res.jsonp({
+            'c': 0,
+            'd': {
+                'ranklist': rankList,
+                'user_info': userInfo
+            }
+        });
+    }
 };

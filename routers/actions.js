@@ -21,5 +21,6 @@ router.get('/actions/tianyi/img/code', require('../modules/tianyi'));
 router.get('/actions/tianyi/participate', require('../modules/tianyi'));
 router.get('/actions/pay_rebate/pageinfo', require('../modules/pageinfo'));
 router.get('/actions/single_day/baseinfo', require('../modules/pageinfo'));
+router.get('/actions/win_rebate/user/reachtimes', require('../modules/pageinfo'));
 
 module.exports = router;
