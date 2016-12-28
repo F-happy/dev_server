@@ -22,5 +22,8 @@ router.get('/actions/tianyi/participate', require('../modules/tianyi'));
 router.get('/actions/pay_rebate/pageinfo', require('../modules/pageinfo'));
 router.get('/actions/single_day/baseinfo', require('../modules/pageinfo'));
 router.get('/actions/win_rebate/user/reachtimes', require('../modules/pageinfo'));
+router.get('/actions/newyear/redbag/pageinfo', require('../modules/newyear_redbag'));
+router.get('/actions/newyear/user/review', require('../modules/newyear_user'));
+router.get('/actions/newyear/redbag/send', require('../modules/newyear_get'));
 
 module.exports = router;
