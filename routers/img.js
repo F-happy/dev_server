@@ -5,6 +5,6 @@
 let express = require('express');
 let router = express.Router();
 
-router.post('/img/up', require('../modules/img'));
+router.get('/image/*', require('../modules/img'));
 
 module.exports = router;
