@@ -33,5 +33,5 @@ fs.readdir(routerRoot, (err, files)=> {
     }
 });
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
 console.log('服务启动, 监听端口: 3000');

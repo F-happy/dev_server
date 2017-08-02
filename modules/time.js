@@ -4,5 +4,5 @@
 'use strict';
 
 module.exports = (req, res)=>{
-    res.send(Date.now());
+    res.send({time: Date.now()});
 };
