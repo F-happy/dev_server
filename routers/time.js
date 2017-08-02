@@ -5,6 +5,6 @@
 let express = require('express');
 let router = express.Router();
 
-router.get('/get_time', require('../modules/time'));
+router.get('/v1/get_time', require('../modules/time'));
 
 module.exports = router;
