@@ -6,4 +6,4 @@ services:
     restart: always
     container_name: dev-server
     ports:
-      - "23335:23335"
+      - "23335:3000"
